@@ -13,8 +13,12 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    You are logged in!
+                    <ul>
+                        <li>
+                            <a href="{{ route('users')}}" class="nav-link">Zarządzanie operatorami</a>
+                        </li>
+                    </ul>
+                    
                 </div>
             </div>
         </div>
