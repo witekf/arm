@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
+use App\UserType;
 
 class UserController extends Controller
 {
@@ -26,7 +27,8 @@ class UserController extends Controller
      */
     public function create()
     {
-        return view('users.adduser');
+        $user_types = UserType::all();
+        return view('users.adduser', ['user_types'=>$user_types]);
     }
 
     /**
@@ -51,7 +53,7 @@ class UserController extends Controller
             'name'=>$request->get('name'),
             'surname'=>$request->get('surname'),
             'password'=>bcrypt($request->get('password')),
-
+            'user_type_id'=>$request->get('user-type')
         ]);
 
         return redirect('/users');
@@ -76,7 +78,9 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        //
+        $user = User::find($id);
+        $user_types = UserType::all();
+        return view('users.edituser', ['user'=>$user, 'user_types'=>$user_types]);
     }
 
     /**
@@ -88,7 +92,27 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'login'=>'required',
+            'name'=>'required',
+            'surname'=>'required'
+            
+        ]);
+
+        $user = User::find($id);
+
+        //z lewej to co w bazie i podstawiamy to co z prawej czyli co w formularzu
+        $user->login = $request->get('login');
+        $user->name = $request->get('name');
+        $user->surname = $request->get('surname');
+        $user->user_type_id = $request->get('user-type');
+        //poniżej wyjątek dla password: jesli niepuste to nadpisz hasło
+        if($request->get('password') != '') {
+            $user->password = bcrypt($request->get('password'));
+        }   
+
+        $user->save();
+        return redirect('/users');
     }
 
     /**
