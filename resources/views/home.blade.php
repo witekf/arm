@@ -20,6 +20,9 @@
                         <li>
                             <a href="{{ route('proposals')}}" class="nav-link">Zarządzanie wnioskami</a>
                         </li>
+                        <li>
+                            <a href="{{ route('units')}}" class="nav-link">Zarządzanie komórkami organizacyjnymi</a>
+                        </li>
                     </ul>
                     
                 </div>

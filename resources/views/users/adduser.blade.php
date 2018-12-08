@@ -38,7 +38,7 @@
                             </select>
                         </div>
 
-                        <button type="submit" class="btn btn-primary">Zapisz operatora
+                        <button type="submit" class="btn btn-primary">Zapisz
 
                         </button>
                     </form>

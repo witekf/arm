@@ -29,6 +29,13 @@ Route::get('/proposals', 'ProposalController@index')->name('proposals');
 Route::get('/proposals/addproposal', 'ProposalController@create')->name('addproposal');
 Route::post('/proposals/addproposal', 'ProposalController@store')->name('addproposal');
 
+//UNITS routing
+Route::get('/units', 'UnitController@index')->name('units');
+Route::get('/units/addunit', 'UnitController@create')->name('addunit');
+Route::post('/units/addunit', 'UnitController@store')->name('addunit');
+Route::delete('/units/deleteunit/{id}', 'UnitController@destroy')->name('deleteunit');
+Route::get('/units/editunit/{id}', 'UnitController@edit')->name('editunit');
+Route::put('/units/{id}', 'UnitController@update')->name('updateunit');
 
 
 
