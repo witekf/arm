@@ -22,9 +22,8 @@
                             <input type="text" class="form-control" id="name" placeholder="Nazwa" name="name" value={{$unit->name}} required>
                         </div>
 
-                        <button type="submit" class="btn btn-primary">Zapisz
-
-                        </button>
+                        <button type="submit" class="btn btn-primary">Zapisz</button>
+                        <a class="btn btn-default btn-close" href="{{ route('units') }}">Cancel</a>
                     </form>
                 </div>
             </div>

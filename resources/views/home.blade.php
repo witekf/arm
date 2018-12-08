@@ -23,6 +23,9 @@
                         <li>
                             <a href="{{ route('units')}}" class="nav-link">Zarządzanie komórkami organizacyjnymi</a>
                         </li>
+                        <li>
+                            <a href="{{ route('services')}}" class="nav-link">Zarządzanie usługami</a>
+                        </li>
                     </ul>
                     
                 </div>

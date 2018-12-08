@@ -38,9 +38,8 @@
                             </select>
                         </div>
 
-                        <button type="submit" class="btn btn-primary">Zapisz
-
-                        </button>
+                        <button type="submit" class="btn btn-primary">Zapisz</button>
+                        <a class="btn btn-default btn-close" href="{{ route('users') }}">Anuluj</a>
                     </form>
                 </div>
             </div>

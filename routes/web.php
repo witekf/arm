@@ -37,5 +37,13 @@ Route::delete('/units/deleteunit/{id}', 'UnitController@destroy')->name('deleteu
 Route::get('/units/editunit/{id}', 'UnitController@edit')->name('editunit');
 Route::put('/units/{id}', 'UnitController@update')->name('updateunit');
 
+//SERVICES routing
+Route::get('/services', 'ServiceController@index')->name('services');
+Route::get('/services/addservice', 'ServiceController@create')->name('addservice');
+Route::post('/services/addservice', 'ServiceController@store')->name('addservice');
+Route::delete('/services/deleteservice/{id}', 'ServiceController@destroy')->name('deleteservice');
+Route::get('/services/editservice/{id}', 'ServiceController@edit')->name('editservice');
+Route::put('/services/{id}', 'ServiceController@update')->name('updateservice');
+
 
 

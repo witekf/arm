@@ -21,9 +21,8 @@
                             </select>
                         </div>
 
-                        <button type="submit" class="btn btn-primary">Zapisz wniosek
-
-                        </button>
+                        <button type="submit" class="btn btn-primary">Zapisz</button>
+                        <a class="btn btn-default btn-close" href="{{ route('proposals') }}">Anuluj</a>
                     </form>
                 </div>
             </div>
