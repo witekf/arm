@@ -12,4 +12,10 @@ class Service extends Model
 
     protected $fillable = ['name', 'key', 'service_kind_id'];
     protected $dates = ['deleted_at'];
+
+    public function service_kind() //pole o takiej nazwie
+    {
+        return $this->belongsTo('App\ServiceKind', 'service_kind_id', 'id'); //zwroci obiekt z tabeli obslugiwanej przez model ServiceKind
+    }
+
 }

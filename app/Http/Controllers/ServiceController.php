@@ -28,7 +28,8 @@ class ServiceController extends Controller
      */
     public function create()
     {
-        //
+        $service_kinds = ServiceKind::all();
+        return view('services.addservice', ['service_kinds'=>$service_kinds]);
     }
 
     /**
@@ -39,7 +40,18 @@ class ServiceController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name'=>'required',
+            'key'=>'required'
+        ]);
+    
+        Service::create([
+        //w ktorym miejscu w bazie z ktorego pola formularza
+            'name'=>$request->get('name'),
+            'key'=>$request->get('key'),
+            'service_kind_id'=>$request->get('service-kind')
+        ]);
+    return redirect('/services');
     }
 
     /**
@@ -75,7 +87,22 @@ class ServiceController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'name'=>'required',
+            'key'=>'required'
+            
+        ]);
+
+        $service = Service::find($id);
+
+        //z lewej to co w bazie i podstawiamy to co z prawej czyli co w formularzu
+        $service->name = $request->get('name');
+        $service->key = $request->get('key');
+        $service->service_kind_id = $request->get('service-kind');
+         
+
+        $service->save();
+        return redirect('/services');
     }
 
     /**
@@ -86,6 +113,8 @@ class ServiceController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $service = Service::find($id);
+        $service->delete();
+        return redirect('/services'); 
     }
 }
