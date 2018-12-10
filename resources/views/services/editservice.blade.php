@@ -33,7 +33,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="key"><input type="checkbox" id="key" name="key"> Usługa kluczowa</label>
+                            <label for="key"><input type="checkbox" id="key" name="key" value="{{$service->key}}"> Usługa kluczowa</label>
                         </div>
 
 

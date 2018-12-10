@@ -15,15 +15,15 @@
                         @method('PUT')
                         <div class="form-group">
                             <label for="login">Login</label>
-                            <input type="text" class="form-control" id="login" placeholder="Login" name="login" value={{$user->login}} required>
+                            <input type="text" class="form-control" id="login" placeholder="Login" name="login" value="{{$user->login}}" required>
                         </div>
                         <div class="form-group">
                             <label for="name">Imię</label>
-                            <input type="text" class="form-control" id="name" placeholder="Imię" name="name" value={{$user->name}} required>
+                            <input type="text" class="form-control" id="name" placeholder="Imię" name="name" value="{{$user->name}}" required>
                         </div>
                         <div class="form-group">
                             <label for="surname">Nazwisko</label>
-                            <input type="text" class="form-control" id="surname" placeholder="Nazwisko" name="surname" value={{$user->surname}} required>
+                            <input type="text" class="form-control" id="surname" placeholder="Nazwisko" name="surname" value="{{$user->surname}}" required>
                         </div>
                         <div class="form-group">
                             <label for="password">Hasło</label>
