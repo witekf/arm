@@ -16,7 +16,7 @@
                         
                         <div class="form-group">
                             <label for="name">Nazwa</label>
-                            <input type="text" class="form-control" id="name" placeholder="Nazwa" name="name" value={{$service->name}} required>
+                            <input type="text" class="form-control" id="name" placeholder="Nazwa" name="name" value="{{$service->name}}" required>
                         </div>
 
                         <div class="form-group">
