@@ -18,6 +18,11 @@ class CreateServiceKindsTable extends Migration
             $table->string('name');
             $table->timestamps();
         });
+
+        Schema::table('services', function (Blueprint $table) {
+            $table->foreign('service_kind_id')->references('id')->on('service_kinds');
+            
+        });
     }
 
     /**

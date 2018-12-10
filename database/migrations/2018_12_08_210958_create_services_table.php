@@ -18,10 +18,13 @@ class CreateServicesTable extends Migration
             $table->string('name');
             $table->boolean('key');
             $table->integer('service_kind_id')->unsigned();
-            $table->foreign('service_kind_id')->references('id')->on('service_kinds');
+           
             $table->softDeletes();
             $table->timestamps();
         });
+
+
+       
     }
 
     /**
