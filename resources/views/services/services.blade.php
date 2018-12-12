@@ -27,7 +27,12 @@
                                 <th scope="row">{{$key+1}}</th>
                                 
                                 <td>{{$service->name}}</td>
-                                <td>{{$service->key}}</td>
+                               
+                                @if($service->key)
+                                <td>TAK</td>
+                                @else
+                                <td>NIE</td>
+                                @endif
 
                                 <td><a href="{{ route('editservice', $service->id)}}" class="btn btn-primary">Edytuj</a></td>
                                 <td>

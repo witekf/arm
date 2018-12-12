@@ -1,0 +1,59 @@
+[33mcommit 320f616870de9feea20bb0dfc47aec95396a67db[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: lbadocha <l.badocha@arena108.pl>
+Date:   Mon Dec 10 09:19:51 2018 +0100
+
+    value edycja usługi
+
+[33mcommit f12a0a7b7fdafc8725290f3610f980e395d54bfb[m
+Author: lbadocha <l.badocha@arena108.pl>
+Date:   Mon Dec 10 09:10:58 2018 +0100
+
+    kolejność migracji
+
+[33mcommit 2745b884546fd33a25a6ac80a8c52dd24e868354[m
+Author: witekf <tauinstalacje@gmail.com>
+Date:   Sun Dec 9 16:34:26 2018 +0100
+
+    poprawki w czesci Services
+
+[33mcommit 4ef78a0c6c9215bb2c28ec1d52fc6f1e411b92b9[m
+Author: witekf <tauinstalacje@gmail.com>
+Date:   Sat Dec 8 23:50:53 2018 +0100
+
+    dodano anuluj i obsługę usług-services
+
+[33mcommit f3b69b7d91cc3ce1e146183c6d79296f8f633feb[m
+Author: witekf <tauinstalacje@gmail.com>
+Date:   Sat Dec 8 16:48:09 2018 +0100
+
+    dodanie soft delete dla units
+
+[33mcommit 9e8cddd78480025400347c41c694b42dfb455a97[m
+Author: witekf <tauinstalacje@gmail.com>
+Date:   Sat Dec 8 16:26:47 2018 +0100
+
+    obsluga komorek organizacyjnych
+
+[33mcommit 8f3463806f98aacfa8a89fd75d28e5a8bdc1aec2[m
+Author: witekf <tauinstalacje@gmail.com>
+Date:   Fri Dec 7 16:48:47 2018 +0100
+
+    drugi dzien
+
+[33mcommit 980f18f8e90552ae4c431a599d667ce4b8d8471b[m
+Author: witekf <tauinstalacje@gmail.com>
+Date:   Thu Dec 6 17:02:56 2018 +0100
+
+    dzien 1
+
+[33mcommit 2f5f3c0045f002c3ee7dbc18aac47bd87764ffbd[m
+Author: witekf <tauinstalacje@gmail.com>
+Date:   Thu Dec 6 14:05:06 2018 +0100
+
+    zarzadzenie uzytkownikami
+
+[33mcommit 8beb2fb5c24b7e875e108e4b882ff0428d3b44d7[m
+Author: witekf <tauinstalacje@gmail.com>
+Date:   Thu Dec 6 10:23:58 2018 +0100
+
+    projekt arm - start
